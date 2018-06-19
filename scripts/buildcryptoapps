@@ -1,0 +1,24 @@
+./gitclone
+
+cp makebitcoin ../bitcoin
+cp makebitcoin ../bitcoin-abc
+cp makebitcoin ../BTCGPU
+cp makebitcoin ../litecoin
+
+cd ../bitcoin
+./makebitcoin
+
+cd ../bitcoin-abc
+./makebitcoin
+
+cd ../BTCGPU
+./makebitcoin
+
+cd ../litecoin
+./makebitcoin
+
+cd ../monero
+make
+
+cd ../go-ethereum
+make geth

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# This script should be run with sudo
+
+# Install dependencies for bitcoin, bitcoin-abc and litecoin
+# Obtained from: https://github.com/bitcoin/bitcoin/blob/master/doc/build-unix.md
+
+sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev miniupnpc
+
+# Install dependencies for bitcoin-gold
+# Obtained from: https://github.com/BTCGPU/BTCGPU/blob/master/doc/build-unix.md
+
+sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils libsodium-dev
+
+# Install dependencies for monero
+# Obtained from: https://github.com/monero-project/monero/README.md
+
+sudo apt-get install build-essential cmake pkg-config libboost-all-dev libssl-dev libzmq3-dev libunbound-dev libsodium-dev libminiupnpc-dev libunwind8-dev liblzma-dev libreadline6-dev libldns-dev libexpat1-dev doxygen graphviz
+
+# Install libgtest-dev
+# Obtained from: https://github.com/monero-project/monero/README.md
+
+sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake . && sudo make && sudo mv libg* /usr/lib/
+
+# Install Go for go-ethereum
+# Obtained from: https://github.com/ethereum/go-ethereum/wiki/Installing-Go#ubuntu-1404
+
+curl -O https://storage.googleapis.com/golang/go1.10.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz
+mkdir -p ~/go; echo "export GOPATH=$HOME/go" >> ~/.bashrc
+echo "export PATH=$PATH:$HOME/go/bin:/usr/local/go/bin" >> ~/.bashrc
+source ~/.bashrc
+
+# Install dependencies for go-ethereum
+# Obtained from: https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu
+
+sudo apt-get install -y build-essential golang

@@ -1,0 +1,6 @@
+git clone --recursive https://github.com/monero-project/monero.git ../.cryptoapps/monero/
+git clone https://github.com/BTCGPU/BTCGPU.git ../.cryptoapps/BTCGPU/
+git clone https://github.com/bitcoin/bitcoin.git ../.cryptoapps/bitcoin/
+git clone https://github.com/Bitcoin-ABC/bitcoin-abc.git ../.cryptoapps/bitcoin-abc/
+git clone https://github.com/litecoin-project/litecoin.git ../.cryptoapps/litecoin/
+git clone https://github.com/ethereum/go-ethereum.git ../.cryptoapps/go-ethereum/

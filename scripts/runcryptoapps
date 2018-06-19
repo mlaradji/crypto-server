@@ -1,0 +1,7 @@
+#!/bin/bash
+/home/administrator/.cryptoapps/bitcoin/src/./bitcoind --daemon --bind=0.0.0.0:8333 --datadir=/home/administrator/.crypto/.bitcoin
+/home/administrator/.cryptoapps/litecoin/src/./litecoind --daemon --datadir=/home/administrator/.crypto/.litecoin
+/home/administrator/.cryptoapps/bitcoin-abc/src/./bitcoind --daemon --bind=0.0.0.0:8334 --datadir=/home/administrator/.crypto/.bitcoinabc
+/home/administrator/.cryptoapps/BTCGPU/src/./bgoldd --daemon --bind=0.0.0.0:8335 --datadir=/home/administrator/.crypto/.bitcoingold
+/home/administrator/.cryptoapps/monero/build/release/bin/./monerod --detach --data-dir=/home/administrator/.crypto/.bitmonero
+/home/administrator/.cryptoapps/go-ethereum/build/bin/./geth --datadir /home/administrator/.crypto/.ethereum/

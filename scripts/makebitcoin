@@ -1,0 +1,3 @@
+./autogen.sh
+./configure --disable-wallet --without-gui --enable-hardening
+make
