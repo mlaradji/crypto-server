@@ -1,6 +1,9 @@
 # crypto-server
 This repo contains scripts for automatic set-up of an Ubuntu server for running daemons for several cryptocurrencies.
 
+# What it does
+This script is meant to be run in shell through "./install_crypto_server" (Note that this file is being worked on and will be uploaded shortly.). It will create three hidden folders in the home folder: .crypto, .cryptoapps, and .cryptoscripts. In .crypto, the blockchains will be stored, with one (hidden) folder per cryptocurrency. In .cryptoapps, the repositories will be cloned and built, and so it will contain the daemon binaries. In .cryptoscripts, all of the scripts in this repo will be copied there, including the script runcryptoapps which can be used to run all of the daemons. Currently, all daemons, with the exception of Ethereum, will run in the background.  
+
 # Supported cryptocurrencies
 Currently supported cryptocurrencies are:
 
